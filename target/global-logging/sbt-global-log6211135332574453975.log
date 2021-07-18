@@ -1,0 +1,91 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, Some(b058b337-fab1-470e-ad3f-fadb6b0b93b9), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 39 Scala sources to /home/kraken/erlebnisse/buraq_mini/target/scala-2.12/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mNon-compiled module 'compiler-bridge_2.12' for Scala 2.12.12. Compiling...[0m
+[0m[[0m[0minfo[0m] [0m[0m  Compilation completed in 15.005s.[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/Harness.scala:3:8: not found: object caravan[0m
+[0m[[0m[31merror[0m] [0m[0mimport caravan.bus.wishbone.{WishboneConfig, WishboneDevice, WishboneHost}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/Harness.scala:4:8: not found: object jigsaw[0m
+[0m[[0m[31merror[0m] [0m[0mimport jigsaw.rams.fpga.BlockRam[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/Harness.scala:7:65: not found: type WishboneConfig[0m
+[0m[[0m[31merror[0m] [0m[0mclass Harness(programFile: Option[String])(implicit val config: WishboneConfig) extends Module {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/Harness.scala:11:33: not found: type WishboneHost[0m
+[0m[[0m[31merror[0m] [0m[0m  val wb_imem_host = Module(new WishboneHost())[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/Harness.scala:12:34: not found: type WishboneDevice[0m
+[0m[[0m[31merror[0m] [0m[0m  val wb_imem_slave = Module(new WishboneDevice())[0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/Harness.scala:13:33: not found: type WishboneHost[0m
+[0m[[0m[31merror[0m] [0m[0m  val wb_dmem_host = Module(new WishboneHost())[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/Harness.scala:14:34: not found: type WishboneDevice[0m
+[0m[[0m[31merror[0m] [0m[0m  val wb_dmem_slave = Module(new WishboneDevice())[0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/Harness.scala:15:26: not found: value BlockRam[0m
+[0m[[0m[31merror[0m] [0m[0m  val imem_ctrl = Module(BlockRam.createNonMaskableRAM(programFile, bus=config, rows=1024))[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/Harness.scala:15:69: not found: value bus[0m
+[0m[[0m[31merror[0m] [0m[0m  val imem_ctrl = Module(BlockRam.createNonMaskableRAM(programFile, bus=config, rows=1024))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/Harness.scala:15:81: not found: value rows[0m
+[0m[[0m[31merror[0m] [0m[0m  val imem_ctrl = Module(BlockRam.createNonMaskableRAM(programFile, bus=config, rows=1024))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/Harness.scala:16:26: not found: value BlockRam[0m
+[0m[[0m[31merror[0m] [0m[0m  val dmem_ctrl = Module(BlockRam.createMaskableRAM(bus=config, rows=1024))[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/Harness.scala:16:53: not found: value bus[0m
+[0m[[0m[31merror[0m] [0m[0m  val dmem_ctrl = Module(BlockRam.createMaskableRAM(bus=config, rows=1024))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/Harness.scala:16:65: not found: value rows[0m
+[0m[[0m[31merror[0m] [0m[0m  val dmem_ctrl = Module(BlockRam.createMaskableRAM(bus=config, rows=1024))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/buraq_mini/core/Core.scala:6:8: not found: object caravan[0m
+[0m[[0m[31merror[0m] [0m[0mimport caravan.bus.wishbone._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/buraq_mini/core/Core.scala:12:31: not found: type WishboneConfig[0m
+[0m[[0m[31merror[0m] [0m[0mclass Core(implicit val conf: WishboneConfig) extends Module {[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/buraq_mini/core/Core.scala:24:33: not found: type WBRequest[0m
+[0m[[0m[31merror[0m] [0m[0m    val dmemReq = Decoupled(new WBRequest())[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/buraq_mini/core/Core.scala:25:41: not found: type WBResponse[0m
+[0m[[0m[31merror[0m] [0m[0m    val dmemRsp = Flipped(Decoupled(new WBResponse()))[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/buraq_mini/core/Core.scala:33:33: not found: type WBRequest[0m
+[0m[[0m[31merror[0m] [0m[0m    val imemReq = Decoupled(new WBRequest())[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/buraq_mini/core/Core.scala:34:41: not found: type WBResponse[0m
+[0m[[0m[31merror[0m] [0m[0m    val imemRsp = Flipped(Decoupled(new WBResponse()))[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/buraq_mini/core/Fetch.scala:3:8: not found: object caravan[0m
+[0m[[0m[31merror[0m] [0m[0mimport caravan.bus.wishbone.{WBRequest, WBResponse, WishboneConfig}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/buraq_mini/core/Fetch.scala:8:34: not found: type WishboneConfig[0m
+[0m[[0m[31merror[0m] [0m[0mclass Fetch(implicit val config: WishboneConfig) extends Module {[0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/buraq_mini/core/MemoryStage.scala:3:8: not found: object caravan[0m
+[0m[[0m[31merror[0m] [0m[0mimport caravan.bus.wishbone.{WBRequest, WBResponse, WishboneConfig}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/buraq_mini/core/MemoryStage.scala:7:40: not found: type WishboneConfig[0m
+[0m[[0m[31merror[0m] [0m[0mclass MemoryStage(implicit val config: WishboneConfig) extends Module {[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/buraq_mini/core/Fetch.scala:14:38: not found: type WBRequest[0m
+[0m[[0m[31merror[0m] [0m[0m    val coreInstrReq = Decoupled(new WBRequest())[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/buraq_mini/core/Fetch.scala:15:46: not found: type WBResponse[0m
+[0m[[0m[31merror[0m] [0m[0m    val coreInstrRsp = Flipped(Decoupled(new WBResponse()))[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/buraq_mini/core/MemoryStage.scala:22:37: not found: type WBRequest[0m
+[0m[[0m[31merror[0m] [0m[0m    val coreDccmReq = Decoupled(new WBRequest())[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/buraq_mini/src/main/scala/buraq_mini/core/MemoryStage.scala:23:45: not found: type WBResponse[0m
+[0m[[0m[31merror[0m] [0m[0m    val coreDccmRsp = Flipped(Decoupled(new WBResponse()))[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m27 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(buraq_mini / Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 32 s, completed Jul 15, 2021, 4:52:45 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

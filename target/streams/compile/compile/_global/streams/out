@@ -1,0 +1,10 @@
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/src/main/scala/Top.scala:5:8: object TilelinkErr is not a member of package caravan.bus.tilelink[0m
+[0m[[0m[31merror[0m] [0m[0mimport caravan.bus.tilelink.{TLRequest, TLResponse, TilelinkConfig, TilelinkDevice, TilelinkErr, TilelinkHost, TilelinkMaster, TilelinkSlave}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/src/main/scala/Top.scala:62:26: not found: type TilelinkErr[0m
+[0m[[0m[31merror[0m] [0m[0m  val tlErr = Module(new TilelinkErr())[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kraken/erlebnisse/src/main/scala/Top.scala:63:21: could not find implicit value for parameter conf: caravan.bus.wishbone.WishboneConfig[0m
+[0m[[0m[31merror[0m] [0m[0m  val core = Module(new Core())[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
