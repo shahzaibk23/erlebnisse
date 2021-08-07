@@ -4,3 +4,6 @@
 [submodule "buraq_mini"]
 	path = buraq_mini
 	url = https://github.com/shahzaibk23/buraq_mini
+[submodule "jigsaw"]
+	path = jigsaw
+	url = https://github.com/shahzaibk23/jigsaw
